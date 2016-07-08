@@ -6,33 +6,35 @@
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
 		<body>
-			<div id  = "header">
-				<nav>
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/about">About</a></li>
-						<li><a href="/blog">Blog</a></li>
-					</ul>
-				</nav>
-			</div> <!-- #header -->
+			<div id = "wrapper">
+			
+				<div id  = "header">
+					<nav>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/about">About</a></li>
+							<li><a href="/blog">Blog</a></li>
+						</ul>
+					</nav>
+				</div> <!-- #header -->
 			
 			
-			<div id = "content">
-				{{ content }}
-			</div> <!-- #content -->
+				<div id = "content">
+					{{ content }}
+				</div> <!-- #content -->
 			
 			
 			
 			
-			<div id = "footer">
-				<nav>
-					<ul>
-						<li><a href="https://github.com/jacudibu"><img src = "{{site.url}}/assets/images/social/github.png" alt = "Find me on Github"></a></li>
-						<li><a href="https://twitter.com/Jacudibu"><img src = "{{site.url}}/assets/images/social/twitter.png" alt = "Find me on Twitter"></a></li>
-					</ul>
-				</nav>
-				Powered by <a href = "https://jekyllrb.com/">Jekyll</a>, hosted by Github.io.
-			</div> <!--#footer -->
-		
+				<div id = "footer">
+					<nav>
+						<ul>
+							<li><a href="https://github.com/jacudibu"><img src = "{{site.url}}/assets/images/social/github.png" alt = "Find me on Github"></a></li>
+							<li><a href="https://twitter.com/Jacudibu"><img src = "{{site.url}}/assets/images/social/twitter.png" alt = "Find me on Twitter"></a></li>
+						</ul>
+					</nav>
+					<!--Powered by <a href = "https://jekyllrb.com/">Jekyll</a>, hosted by Github.io.-->
+				</div> <!--#footer -->
+			</div> <!--#wrapper-->
 		</body>
 	</html>
