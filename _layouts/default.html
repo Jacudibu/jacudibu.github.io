@@ -6,23 +6,33 @@
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
+			<div id  = "header">
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/blog">Blog</a></li>
+					</ul>
+				</nav>
+			</div> <!-- #header -->
 			
-			{{ content }}
 			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:">email</a></li>
-	        		<li><a href="https://github.com/jacudibu">github.com/jacudibu</a></li>
-				</ul>
-			</footer>
+			<div id = "content">
+				{{ content }}
+			</div> <!-- #content -->
+			
+			
+			
+			
+			<div id = "footer">
+				<nav>
+					<ul>
+						<li><a href="https://github.com/jacudibu"><img src = "{{site.url}}/assets/images/social/github.png" style = "width:20px;height:20px;" alt = "Find me on Github"></a></li>
+						<li><a href="https://twitter.com/Jacudibu"><img src = "{{site.url}}/assets/images/social/twitter.png" style = "width:20px;height:20px;" alt = "Find me on Twitter"></a></li>
+					</ul>
+				</nav>
+				Powered by Jekyll, hosted by Github.io
+			</div> <!--#footer -->
+		
 		</body>
 	</html>
