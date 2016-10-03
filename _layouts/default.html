@@ -38,5 +38,10 @@
 					<!--Powered by <a href = "https://jekyllrb.com/">Jekyll</a>, hosted by Github.io.-->
 				</div> <!--#footer -->
 			</div> <!--#wrapper-->
+     
+        <!-- Google Analytics -->
+        {% if jekyll.environment == 'production' %}
+            {% include analytics.html %}
+        {% endif %}
 		</body>
 	</html>
