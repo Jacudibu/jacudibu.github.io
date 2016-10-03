@@ -27,7 +27,7 @@ title: Jacudibu | Blog
                 {{ post.excerpt | number_of_words }} 
             {% endcapture %} 
             {% if excerpt_words != content_words %}
-                <a href="{{ post.url }}/#more" title="Show More...">
+                <a href="{{ post.url }}" title="Show More...">
                     [Show More...]
                 </a>
             {% endif %}
