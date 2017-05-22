@@ -6,13 +6,11 @@ if(window.location.hash) {
 }
 
 function filter(tag) {
-  console.log("filter(" + tag + ")");
   setActiveTag(tag);
   showContainer(tag);
 }
 
 function setActiveTag(tag) {
-  console.log("setActive(" + tag + ")");
   // loop through all items and remove active class
   var items = document.getElementsByClassName('blog-tag-item');
   for(var i=0; i < items.length; i++) {
@@ -27,7 +25,6 @@ function setActiveTag(tag) {
 }
 
 function showContainer(tag) {
-  console.log("showContainer(" + tag + ")");
   // loop through all lists and hide them
   var lists = document.getElementsByClassName('blog-list-container');
   for(var i=0; i < lists.length; i++) {

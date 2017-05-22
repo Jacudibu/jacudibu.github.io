@@ -2,7 +2,7 @@
 layout: default
 title: Jacudibu | Blog
 js:
-- /scripts/tagfilter.js
+- /scripts/projectPage.js
 languages:
 - C#
 - C++
@@ -12,15 +12,17 @@ frameworks:
 - Unity
 - libGDX
 
-area:
+type:
+- Hobby
+- Gamejam
 - University
 - Work
-- Hobby
-
 ---
 
+<center>
+<nav>
 <ul class="blog-tags-list">
-    Filter by language:
+    Filter by language: <br>
     {% for language in page.languages %}
         <li class="blog-tag-item" id="{{ language }}-item">
             <a href onclick="filter('{{ language }}'); return false;">{{ language }}</a>
@@ -28,7 +30,7 @@ area:
     {% endfor %}
     
     <br>
-    Filter by Framework / Engine:
+    Filter by Framework / Engine: <br>
     {% for framework in page.frameworks %}
         <li class="blog-tag-item" id="{{ framework }}-item">
             <a href onclick="filter('{{ framework }}'); return false;">{{ framework }}</a>
@@ -36,20 +38,20 @@ area:
     {% endfor %}
     
     <br>
-    Filter by Area:
-    {% for area in page.area %}
-        <li class="blog-tag-item" id="{{ area }}-item">
-            <a href onclick="filter('{{ area }}'); return false;">{{ area }}</a>
+    Filter by Type: <br>
+    {% for type in page.type %}
+        <li class="blog-tag-item" id="{{ type }}-item">
+            <a href onclick="filter('{{ type }}'); return false;">{{ type }}</a>
         </li>
     {% endfor %}
     
-    <br>
+    <br> <br>
     <a href onclick="filter('all'); return false;">Reset Filter</a>
 </ul>
+</nav>
+</center>
 
-<!-- inspired by http://drejkim.com/blog/2015/03/18/filtering-posts-by-tags-with-jekyll/ -->
-
-
+<!-- this whole filtering system is highly inspired by http://drejkim.com/blog/2015/03/18/filtering-posts-by-tags-with-jekyll/ -->
 <div class="blog-list-container" id="all-container">
     <ul class="blog-list">
         {% for post in site.posts %}
@@ -84,7 +86,6 @@ area:
     </ul>
 </div>
 
-<!-- Reference: http://www.jokecamp.com/blog/listing-jekyll-posts-by-tag/ -->
 {% for tag in site.tags %}
     {% assign t = tag | first %}
     {% assign posts = tag | last %}

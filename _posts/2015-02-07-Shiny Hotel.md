@@ -2,7 +2,7 @@
 layout: post
 title: Shiny Hotel
 date: 2015-02-07
-tags: Unity C# Uni
+tags: Unity C# University
 ---
 In Shiny Hotel, you take control over an elevator and have to transport your hotel guests to the right floor - thats not as simple as it may sound, since most visitors won't like each other and prefer to start fighting if you leave them alone! (Guess you won't enjoy being alone with two zombies and a werewolf in an elevator too... ;) )
 <center><img src = "{{site.url}}/assets/images/screenshots/shinyHotel.jpg" style = "width:20%;height:20%"><br></center>

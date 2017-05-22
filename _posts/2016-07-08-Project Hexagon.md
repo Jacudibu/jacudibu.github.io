@@ -4,11 +4,12 @@ title: Project Hexagon
 date: 2016-07-08
 tags: Unity C# Hobby
 ---
-So this is supposed to be a bigger Post about "Project Hexagon", which started out as "just something using hexagons". The whole project started out as a random world generator featuring Diamond-Square, Cell-Noise and Hydraulic Erosion Algorithms and other fancy things. <!--more-->Back then it looked like this:
+So this is supposed to be a bigger Post about "Project Hexagon", which started out as "just something using hexagons". The whole project started out as a random world generator featuring Diamond-Square, Cell-Noise and Hydraulic Erosion Algorithms and other fancy things. Back then it looked like this:
 <center>
 <img src = "{{site.url}}/assets/images/OldMapGen1.png" alt = "Here would be a beautiful Heightmap" style = "width:40%;height:400px">
 <img src = "{{site.url}}/assets/images/OldMapGen2.png" alt = "Here would be a colorized Heightmap" style = "width:40%;height:400px">
 </center>
+<!--more-->
 
 As you might see, these are colorized heightmaps drawn onto a hexagon Field. From all the Algorithms my favourite one was Cell Noise, its heightmaps really looks great:
 <center>
