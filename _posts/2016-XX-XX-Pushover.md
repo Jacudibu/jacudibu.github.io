@@ -2,7 +2,7 @@
 layout: post
 title: Pushover
 date: 2016--
-Tags: Haxe, Gamejam
+Tags: Haxe Gamejam
 ---
 Pushover is a Multiplayer Game where you'll have to push your friends over the cliff. The last one standing wins!
 Try it, it's actually a lot of fun: ...

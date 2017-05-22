@@ -2,7 +2,7 @@
 layout: post
 title: Castle Defenders
 date: 2016--
-tags: Unity, C#, Hobby
+tags: Unity C# Hobby
 ---
 You have to protect your Castle from waves of Enemies! Loot their money in order to purchase upgrades in between waves. How long will you survive?
 Play it here: ...

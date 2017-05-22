@@ -2,7 +2,7 @@
 layout: post
 title: Hunt the Light
 date: 2016-10-03
-tags: Unity, C#, Gamejam
+tags: Unity C# Gamejam
 ---
 You wake up in the middle of the night. It's storming outside. Suddenly you hear a noise - something must be in your room! You have to follow the light so the Monsters won't eat you.
 <center><img src = "{{site.url}}/assets/images/screenshots/HuntTheLight.PNG" style = "width:40%;height:40%"></center>

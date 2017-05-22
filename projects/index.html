@@ -1,0 +1,126 @@
+---
+layout: default
+title: Jacudibu | Blog
+js:
+- /scripts/tagfilter.js
+languages:
+- C#
+- C++
+- Java
+
+frameworks:
+- Unity
+- libGDX
+
+area:
+- University
+- Work
+- Hobby
+
+---
+
+<ul class="blog-tags-list">
+    Filter by language:
+    {% for language in page.languages %}
+        <li class="blog-tag-item" id="{{ language }}-item">
+            <a href onclick="filter('{{ language }}'); return false;">{{ language }}</a>
+        </li>
+    {% endfor %}
+    
+    <br>
+    Filter by Framework / Engine:
+    {% for framework in page.frameworks %}
+        <li class="blog-tag-item" id="{{ framework }}-item">
+            <a href onclick="filter('{{ framework }}'); return false;">{{ framework }}</a>
+        </li>
+    {% endfor %}
+    
+    <br>
+    Filter by Area:
+    {% for area in page.area %}
+        <li class="blog-tag-item" id="{{ area }}-item">
+            <a href onclick="filter('{{ area }}'); return false;">{{ area }}</a>
+        </li>
+    {% endfor %}
+    
+    <br>
+    <a href onclick="filter('all'); return false;">Reset Filter</a>
+</ul>
+
+<!-- inspired by http://drejkim.com/blog/2015/03/18/filtering-posts-by-tags-with-jekyll/ -->
+
+
+<div class="blog-list-container" id="all-container">
+    <ul class="blog-list">
+        {% for post in site.posts %}
+            <li>
+                <p>
+                <span>
+                    <b>
+                        {{ post.date | date_to_long_string }}
+                    </b>
+                </span>
+                >>
+                <a href="{{ post.url }}" title="{{ post.title }}">
+                    <b>
+                        {{ post.title }}
+                    </b>
+                </a>
+                {{ post.excerpt}}
+                {% capture content_words %} 
+                    {{ post.content | number_of_words }} 
+                {% endcapture %} 
+                {% capture excerpt_words %} 
+                    {{ post.excerpt | number_of_words }} 
+                {% endcapture %} 
+                {% if excerpt_words != content_words %}
+                    <a href="{{ post.url }}" title="Show More...">
+                        [Show More...]
+                    </a>
+                {% endif %}
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- Reference: http://www.jokecamp.com/blog/listing-jekyll-posts-by-tag/ -->
+{% for tag in site.tags %}
+    {% assign t = tag | first %}
+    {% assign posts = tag | last %}
+    <div class="blog-list-container hidden" id="{{ t }}-container">
+        <ul class="blog-list">
+            {% for post in posts %}
+                {% if post.tags contains t %}
+                    <li>
+                        <p>
+                        <span>
+                            <b>
+                                {{ post.date | date_to_long_string }}
+                            </b>
+                        </span>
+                        >>
+                        <a href="{{ post.url }}" title="{{ post.title }}">
+                            <b>
+                                {{ post.title }}
+                            </b>
+                        </a>
+                        {{ post.excerpt}}
+                        {% capture content_words %} 
+                            {{ post.content | number_of_words }} 
+                        {% endcapture %} 
+                        {% capture excerpt_words %} 
+                            {{ post.excerpt | number_of_words }} 
+                        {% endcapture %} 
+                        {% if excerpt_words != content_words %}
+                            <a href="{{ post.url }}" title="Show More...">
+                                [Show More...]
+                            </a>
+                        {% endif %}
+                        </p>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+{% endfor %}

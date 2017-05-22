@@ -13,7 +13,7 @@
 						<ul>
 							<li><a href="/">Home</a></li>
 							<li><a href="/about">About</a></li>
-							<li><a href="/blog">Blog</a></li>
+							<li><a href="/projects">Projects</a></li>
 						</ul>
 					</nav>
 				</div> <!-- #header -->
@@ -40,8 +40,15 @@
 			</div> <!--#wrapper-->
      
         <!-- Google Analytics -->
+        <!--
         {% if jekyll.environment == 'production' %}
             {% include analytics.html %}
         {% endif %}
-		</body>
+		-->
+        
+        {% for file in page.js %}
+            <script type="text/javascript" src="{{ file }}"></script>
+        {% endfor %}
+        </body>
 	</html>
+    

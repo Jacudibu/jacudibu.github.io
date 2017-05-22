@@ -2,7 +2,7 @@
 layout: post
 title: Snake on a Roccat Ryos MK Pro
 date: 2015-08-10
-tags: C++, Awkward, Hobby
+tags: C++ Awkward Hobby
 ---
 So.. Uh. Yeah. Instead of writing lots of stuff, here's a video on YouTube that shows what I've done here:
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/l1b0mLjcS3o?rel=0" frameborder="0" allowfullscreen></iframe></center>

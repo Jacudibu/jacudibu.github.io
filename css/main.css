@@ -98,3 +98,10 @@ ul.posts li
 {
     list-style: none;
 }
+
+
+
+.hidden {
+  display: none!important;
+  visibility: hidden!important;
+}

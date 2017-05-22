@@ -2,7 +2,7 @@
 layout: post
 title: Embrace the Awkward Engine!
 date: 2015-02-04
-tags: C++, Awkward, Hobby
+tags: C++ Awkward Hobby
 ---
 So i had this kinda random Idea to create my own Game Engine...
 <center><img src = "{{site.url}}/assets/images/awkwardEngine/AwkwardLogo.png"></center>
