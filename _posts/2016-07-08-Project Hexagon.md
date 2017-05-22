@@ -2,6 +2,7 @@
 layout: post
 title: Project Hexagon
 date: 2016-07-08
+tags: Unity, C#, Hobby
 ---
 So this is supposed to be a bigger Post about "Project Hexagon", which started out as "just something using hexagons". The whole project started out as a random world generator featuring Diamond-Square, Cell-Noise and Hydraulic Erosion Algorithms and other fancy things. <!--more-->Back then it looked like this:
 <center>

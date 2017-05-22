@@ -2,6 +2,7 @@
 layout: post
 title: Snake on the Nintendo 3DS
 date: 2016-06-16
+tags: Homebrew, Lua, Hobby
 ---
 Snake is still a great game nowadays and my recent snake clone on the Roccat Keyboard just wasn't enough of a tribute to my favourity Mobile Game of all time. So as a next step, let's make one for the Nintendo 3DS. Yay!
 <center><img src = "{{site.url}}/assets/images/screenshots/snake2ds.png" style = "width:20%;height:20%"><br>(Yup, that's my first Homebrew ever)</center>
